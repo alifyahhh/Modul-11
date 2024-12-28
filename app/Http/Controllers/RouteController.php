@@ -15,4 +15,10 @@ class RouteController extends Controller
         return "This is Profile from Controller, profile id: " . $profileId;
     }
 
+    public function home()
+    {
+        return view('home', ['pageTitle' => 'Home Page']);
+    }
+
+
 }
